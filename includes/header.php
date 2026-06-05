@@ -44,6 +44,12 @@ require_once __DIR__ . '/../config/functions.php';
                     </div>
                 </form>
                 <?php if (isLoggedIn()): ?>
+                <a href="cart.php" class="btn btn-outline-light btn-sm me-2 position-relative" aria-label="View cart">
+                    <i class="bi bi-cart3"></i>
+                    <span class="cart-count badge rounded-pill bg-warning text-dark position-absolute top-0 start-100 translate-middle d-none">0</span>
+                </a>
+                <?php endif; ?>
+                <?php if (isLoggedIn()): ?>
                 <div class="dropdown">
                     <button class="btn btn-outline-light dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown">
                         <i class="bi bi-person-circle"></i> <?= clean($_SESSION['username']) ?>
