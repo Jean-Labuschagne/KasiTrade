@@ -1,6 +1,7 @@
 # KasiTrade - C2C E-Commerce Platform
 
 South African township marketplace built for Eduvos ITECA3-12 Web Development & e-Commerce.
+By Jean Labuschagne - Student nr: eduv4955673
 
 Project context
 
