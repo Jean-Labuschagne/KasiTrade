@@ -1,0 +1,92 @@
+/* KasiTrade Bootstrap 5 Customizations */
+
+:root {
+    --bs-primary: #1B5E20;
+    --bs-primary-rgb: 27, 94, 32;
+    --bs-secondary: #FF6F00;
+    --bs-secondary-rgb: 255, 111, 0;
+    --bs-success: #2E7D32;
+    --bs-success-rgb: 46, 125, 50;
+    --bs-font-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --bs-body-font-size: 1rem;
+    --bs-body-line-height: 1.6;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    min-height: 44px;
+    font-weight: 600;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #2E7D32;
+    border-color: #2E7D32;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+.card { border-radius: 12px; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.card-header { border-radius: 12px 12px 0 0 !important; font-weight: 600; }
+
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(27, 94, 32, 0.15);
+}
+
+.form-select {
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    padding: 0.75rem 2.25rem 0.75rem 1rem;
+}
+
+.badge { font-weight: 500; padding: 0.5em 0.75em; }
+
+.alert { border-radius: 8px; border: none; }
+.alert-primary { background-color: rgba(27, 94, 32, 0.1); color: var(--bs-primary); }
+
+.pagination { gap: 0.25rem; }
+
+.page-link {
+    border-radius: 8px;
+    border: none;
+    color: var(--bs-primary);
+    font-weight: 500;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-link:hover { background-color: rgba(27, 94, 32, 0.1); color: var(--bs-primary); }
+.page-item.active .page-link { background-color: var(--bs-primary); color: white; }
+
+.modal-content { border-radius: 16px; border: none; }
+.modal-header { border-radius: 16px 16px 0 0; background-color: var(--bs-primary); color: white; }
+.modal-header .btn-close { filter: invert(1); }
+
+.dropdown-menu { border-radius: 12px; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); padding: 0.5rem; }
+.dropdown-item { border-radius: 8px; padding: 0.5rem 1rem; font-weight: 500; }
+.dropdown-item:hover { background-color: rgba(27, 94, 32, 0.1); color: var(--bs-primary); }
+
+.table { border-radius: 12px; overflow: hidden; }
+.table thead th { background-color: var(--bs-primary); color: white; font-weight: 600; border: none; padding: 1rem; }
+.table tbody td { padding: 1rem; vertical-align: middle; }
+.table tbody tr:hover { background-color: rgba(27, 94, 32, 0.05); }
+
+.progress { border-radius: 10px; height: 8px; background-color: #e0e0e0; }
+.progress-bar { background-color: var(--bs-primary); border-radius: 10px; }
+
+.toast { border-radius: 12px; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.toast-header { border-radius: 12px 12px 0 0; background-color: var(--bs-primary); color: white; }
