@@ -1,5 +1,10 @@
 <?php
 require_once __DIR__ . '/../config/functions.php';
+
+function assetVersion($relativePath) {
+    $fullPath = __DIR__ . '/../' . ltrim($relativePath, '/');
+    return file_exists($fullPath) ? filemtime($fullPath) : time();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +14,9 @@ require_once __DIR__ . '/../config/functions.php';
     <title><?= $pageTitle ?? 'KasiTrade' ?> - Township Marketplace</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-custom.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=<?= assetVersion('assets/css/style.css') ?>">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=<?= assetVersion('assets/css/responsive.css') ?>">
+    <link rel="stylesheet" href="assets/css/bootstrap-custom.css?v=<?= assetVersion('assets/css/bootstrap-custom.css') ?>">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
