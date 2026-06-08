@@ -66,6 +66,6 @@ Features in progress
 Conclusion
 
 - KasiTrade was designed around township trading needs, mobile access, and simple user flows.
-- The codebase already supports the core marketplace, admin control, and responsive behaviour needed for Deliverable 3.
+- The codebase already supports the core marketplace, admin control, and responsive behaviour needed.
 - Next steps are to finish the remaining visual polish, tighten theme behaviour, and prepare the final implementation evidence.
 
